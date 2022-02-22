@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul{
+    padding: 30px 30px;
+    text-align: right;
+}
+
+li{
+    margin: 20px;
+    display: inline;
+}
+
+li a{
+    font-size: 25px;
+}
+
+li a:link, a:visited, a:active {
+    color: #fff;
+}
+
+li a:hover{
+    color:#3E5DDB;
+}
+
+.top{
+    height: 800px;
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+}
+
+.top p{
+    padding-top: 60px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #3E5DDB;
+    font-size: 55px;
+    padding: 30px;
+}
+
+.introduction{
+    height: 1000px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.intro-bgi1{
+    width: 300px;
+    height: 100px;
+    background-image: url(images/introduction_001.jpg);
+    background-size: cover;
+    padding: 100px;
+}
+
+.intro-bgi2{
+    width: 300px;
+    height: 100px;
+    background-image: url(images/introduction_002.jpg);
+    background-size: cover;
+    padding: 100px;
+}
+
+.detail{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.detail p{
+    padding: 20px 0;
+    text-align: left;
+    line-height: 30px;
+}
+
+.detail a{
+    padding: 20px auto;
+    width: 150px;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail a:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1); 
+}
+
+.bluebtn{
+    background-color: #3E5DDB;
+}
+
+.yelbtn{
+    background-color: #FFBF01;
+}
+
+.courses{
+    height: 800px;
+}
+
+.images{
+    height: 800px;
+}
+
+.access{
+    height: 650px;
+}
+
+iframe{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p{
+    padding: 20px;
+    text-align: center;
+}
