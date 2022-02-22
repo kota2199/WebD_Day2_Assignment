@@ -11,7 +11,7 @@ ul{
 }
 
 li{
-    margin: 20px;
+    margin: 15px;
     display: inline;
 }
 
@@ -52,11 +52,11 @@ h2{
     text-align: center;
     color: #3E5DDB;
     font-size: 55px;
-    padding: 30px;
+    padding: 70px;
 }
 
 .introduction{
-    height: 1000px;
+    height: auto;
 }
 
 .content{
@@ -67,7 +67,7 @@ h2{
 
 .intro-bgi1{
     width: 300px;
-    height: 100px;
+    height: 150px;
     background-image: url(images/introduction_001.jpg);
     background-size: cover;
     padding: 100px;
@@ -75,7 +75,7 @@ h2{
 
 .intro-bgi2{
     width: 300px;
-    height: 100px;
+    height: 150px;
     background-image: url(images/introduction_002.jpg);
     background-size: cover;
     padding: 100px;
@@ -85,11 +85,11 @@ h2{
     width: 400px;
     height: 100px;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 70px;
 }
 
 .detail p{
-    padding: 20px 0;
+    width: auto;
     text-align: left;
     line-height: 30px;
 }
@@ -119,33 +119,91 @@ h2{
 }
 
 .courses{
-    height: 800px;
+    height: auto;
+    background-color: #D6E6F9;
 }
 
 .tiles{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tile{
-    width: 200px;
-    height: 300px;
+    width: 220px;
+    height: 360px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.logo-box{
+    height: 200px;
 }
 
 .course-logo{
+    padding-top: 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.course-tile{
+    height: auto;
 }
 
 .course-title{
     text-align: center;
+    font-size: 16px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .course-btn{
     display: block;
+    width: 180px;
+    height: 40px;
+    padding: 40px auto;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    display: block;
+    border-radius: 10px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #000;
+}
+
+.course-btn a:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1); 
+}
+
+.html .course-btn{
+    background-color: #F16529;
+}
+.css .course-btn{
+    background-color: #29A9DF;
+}
+.unity .course-btn{
+    background-color: #333333;
+}
+.ruby .course-btn{
+    background-color: #FF5252;
+}
+.js .course-btn{
+    background-color: #FFD700;
+}
+.swift .course-btn{
+    background-color: #FE7536;
+}
+.go .course-btn{
+    background-color: #73CEDD;
+}
+
+.course-btn a:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1); 
 }
 
 .images{
@@ -164,6 +222,6 @@ iframe{
 }
 
 footer p{
-    padding: 20px;
+    padding-top: 100px;
     text-align: center;
 }
