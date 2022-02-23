@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="particles.min.js"></script>
+    <link href="slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
     <script src="`"></script>
     
     <title>Document</title>
@@ -145,6 +149,13 @@
 
     <div class="images" id="images">
         <h2>Images</h2>
+        <ul class="slider">
+            <li><a href="#"><img src="images/background1.jpg" alt="image01"></a></li>
+            <li><a href="#"><img src="images/background2.jpg" alt="image02"></a></li>
+            <li><a href="#"><img src="images/background3.jpg" alt="image03"></a></li>
+            <li><a href="#"><img src="images/background4.jpg" alt="image04"></a></li>
+            <li><a href="#"><img src="images/background5.jpg" alt="image05"></a></li>
+        </ul>
     </div>
 
     <div class="access" id="access">
@@ -169,6 +180,25 @@
         duration: 1000, //エフェクトの時間 1000=1秒
         easing: "swing", //エフェクトのイージング "swing" "linear"
     });
+    	
+    $('.slider').slick({
+    dots:true,
+    slidesToShow:4,
+    responsive:[
+        {
+            breakpoint: 1024,
+            settings:{
+                slidesToShow:3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings:{
+                slidesToShow:2,
+            }
+        },
+    ]
+});
 });
     </script>
 
