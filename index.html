@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <link href="slick-theme.css" rel="stylesheet" type="text/css">
     <link href="slick.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="slick.min.js"></script>
-    <script src="`"></script>
-    
-    <title>Document</title>
+    <title>Happy Hack</title>
 </head>
+    <script src="app.js"></script>
+    <script src="particles.min.js"></script>
 <body>
-    
     <div class="top">
         <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -25,7 +23,7 @@
             <li><a href="#access">Access</a></li>
         </ul>
         <img src="images/logo.png" alt="" width="900px">
-        <p>We are Web Desingers.</p>
+        <p>We are Web Designers.</p>
     </div>
 
     <div class="introduction" id="introduction">
@@ -202,6 +200,17 @@
         },
     ]
 });
+    $(window).scroll(function () {
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
+
+    $('.element').each(function () {
+      const targetPosition = $(this).offset().top;
+      if (scroll > targetPosition - windowHeight + 100) {
+        $(this).addClass("is-fadein");
+      }
+    });
+  });
 });
     </script>
 
