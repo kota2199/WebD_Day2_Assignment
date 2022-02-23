@@ -6,17 +6,18 @@
 }
 
 ul{
-    padding: 30px 30px;
+    padding: 30px 50px;
     text-align: right;
 }
 
 li{
-    margin: 15px;
+    margin: 14px;
     display: inline;
 }
 
 li a{
-    font-size: 25px;
+    font-size: 26px;
+    font-family: "Futura-Boo";
 }
 
 li a:link, a:visited, a:active {
@@ -45,14 +46,16 @@ li a:hover{
     padding-top: 60px;
     color: #fff;
     font-size: 40px;
+    font-family: "Futura-LigObl";
     text-align: center;
 }
 
 h2{
     text-align: center;
     color: #3E5DDB;
-    font-size: 55px;
-    padding: 70px;
+    font-size: 60px;
+    font-family: "Futura-Bol";
+    padding: 50px;
 }
 
 .introduction{
@@ -62,7 +65,7 @@ h2{
 .content{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 .intro-bgi1{
@@ -96,10 +99,13 @@ h2{
 
 .detail a{
     padding: 20px auto;
-    width: 150px;
-    font-size: 25px;
+    width: 180px;
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
     color: #fff;
-    display: block;
     border-radius: 10px;
     margin-top: 20px;
     margin-left: auto;
@@ -120,19 +126,24 @@ h2{
 
 .courses{
     height: auto;
+    width: auto;
     background-color: #D6E6F9;
 }
 
 .tiles{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .tile{
-    width: 220px;
-    height: 360px;
+    width: 240px;
+    height: 340px;
     margin: 10px;
+    margin-bottom: 20px;
     background: #fff;
     border-radius: 10px;
 }
@@ -154,17 +165,19 @@ h2{
 
 .course-title{
     text-align: center;
-    font-size: 16px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .course-btn{
     display: block;
-    width: 180px;
+    width: 170px;
     height: 40px;
     padding: 40px auto;
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: bold;
     text-align: center;
     line-height: 40px;
     color: #fff;
@@ -203,7 +216,7 @@ h2{
 }
 
 .course-btn a:hover{
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1); 
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
 }
 
 .images{
@@ -223,5 +236,8 @@ iframe{
 
 footer p{
     padding-top: 100px;
+    padding-bottom: 30px;
     text-align: center;
+    font-family: "Futura-Lig";
+    color:#3E5DDB;
 }
