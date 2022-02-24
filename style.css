@@ -443,4 +443,8 @@ canvas{
         flex-flow: column;
         justify-content:space-around;
     }
+
+    .access{
+        height: 400px;
+    }
 }
