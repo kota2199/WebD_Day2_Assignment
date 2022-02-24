@@ -447,4 +447,8 @@ canvas{
     .access{
         height: 400px;
     }
+
+    .top ul{
+        display: none;
+    }
 }
