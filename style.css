@@ -101,7 +101,7 @@ h2{
 }
 
 .introduction{
-    height: auto;
+    height: 1000px;
 }
 
 .is-fadein {
@@ -123,6 +123,7 @@ h2{
     justify-content: center;
     padding-top: 0;
     padding-bottom: 0px;
+    flex-flow: row-reverse;
 }
 
 .intro-bgi1{
@@ -145,7 +146,7 @@ h2{
 
 .detail{
     width: 400px;
-    height: 100px;
+    height: auto;
     text-align: center;
     padding: 45px;
     padding-top: 20px;
@@ -155,7 +156,6 @@ h2{
     font-family: 'Hiragino Kaku Gothic Pro';
     text-align: left;
     line-height: 30px;
-    white-space: nowrap;
 }
 
 .detail a{
@@ -411,14 +411,36 @@ canvas{
       width: 600px;
   }
 
-@media all and(max-width:480px) {
+@media all and (max-width:480px) {
     .top p{
         font-size: 20px;
     }
-    iframe{
-        width: 120px;
+
+    h2{
+        font-size: 45px;
     }
+
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+
+    .intro-bgi1, .intro-bgi2{
+        width: auto;
+    }
+
+    .detail{
+        width: auto;
+    }
+
+    .introduction{
+        height: 2000px;
+    }
+
     .content, .content2{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        justify-content:space-around;
     }
 }
