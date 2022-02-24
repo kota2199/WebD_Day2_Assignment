@@ -12,8 +12,6 @@
     <script type="text/javascript" src="slick.min.js"></script>
     <title>Happy Hack</title>
 </head>
-    <script src="app.js"></script>
-    <script src="particles.min.js"></script>
 <body>
     <div class="top">
         <ul>
@@ -26,8 +24,10 @@
         <p>We are Web Designers.</p>
     </div>
 
-    <div class="introduction" id="introduction">
-        <h2>Introduction</h2>
+    <div class="introduction fade-in fade-down" id="introduction">
+        <div class="title-box">
+            <h2>Introduction</h2>
+        </div>
         <div class="intro-contents">
             <div class="content">
                 <div class="intro-bgi1">
@@ -39,7 +39,7 @@
                     <a class="bluebtn" href="">会員登録</a>
                 </div>
             </div>
-            <div class="content">
+            <div class="content2">
                 <div class="detail">
                     <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
                         WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
@@ -48,16 +48,14 @@
                 </div>
                 <div class="intro-bgi2">
                 </div>
-            </div>
-            <div class="content2">
-
-            </div>
-            
+            </div>  
         </div>
     </div>
 
-    <div class="courses" id="particles-js">
+    <div class="courses fade-in fade-in-down"  id="particles-js">
+        <div class="title-box">
             <h2>Courses</h2>
+        </div>
         <div class="tiles">
             <div class="tile">
                     <div class="course-tile">
@@ -145,8 +143,10 @@
         </div>
     </div>
 
-    <div class="images" id="images">
-        <h2>Images</h2>
+    <div class="images fade-in fade-in-down"  id="images">
+        <div class="title-box">
+            <h2>Images</h2>
+        </div>
         <div>
         <ul class="slider">
             <li><a href="#"><img src="images/background1.jpg" alt="image01"></a></li>
@@ -158,8 +158,10 @@
     </div>
     </div>
 
-    <div class="access" id="access">
-        <h2>Access</h2>
+    <div class="access fade-in fade-in-down"  id="access">
+        <div class="title-box">
+            <h2>Access</h2>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.6262797845075!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1645513264729!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
@@ -211,8 +213,20 @@
       }
     });
   });
+  var fadeIn = $('.fade-in');
+  $(window).scroll(function () {
+    $(fadeIn).each(function () {
+      var offset = $(this).offset().top;
+      var scroll = $(window).scrollTop(); 
+      var windowHeight = $(window).height();
+      if (scroll > offset - windowHeight + 150) {
+        $(this).addClass("scroll-in");
+      }
+    });
+  });
 });
     </script>
-
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

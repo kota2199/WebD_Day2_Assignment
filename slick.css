@@ -1,4 +1,9 @@
 /* Slider */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .slick-slider
 {
     position: relative;
@@ -55,8 +60,8 @@
     left: 0;
 
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 .slick-track:before,
 .slick-track:after
@@ -100,8 +105,10 @@
 }
 .slick-initialized .slick-slide
 {
-    display: block;
-    padding: 0;
+    display: inline;
+    padding-bottom: 0;
+    /* display: block;
+    padding: 0; */
 }
 .slick-loading .slick-slide
 {

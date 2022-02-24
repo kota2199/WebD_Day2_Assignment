@@ -57,11 +57,27 @@ li a:hover{
 }
 
 h2{
+    z-index: 3;
     text-align: center;
     color: #3E5DDB;
     font-size: 60px;
     font-family: "Futura-Bol";
-    padding: 50px;
+    padding-top: 45px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.title-box{
+    padding-bottom: 0;
+    height: 150px;
+    width: 120px;
+    z-index: 3;
+    text-align: center;
 }
 
 .introduction{
@@ -81,15 +97,24 @@ h2{
 .content{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.content2{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0px;
 }
 
 .intro-bgi1{
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
     background-image: url(images/introduction_001.jpg);
     background-size: cover;
-    padding: 100px;
+    padding: 45px;
+    padding-bottom: 100px;
 }
 
 .intro-bgi2{
@@ -97,6 +122,7 @@ h2{
     height: 150px;
     background-image: url(images/introduction_002.jpg);
     background-size: cover;
+    padding: 45px;
     padding: 100px;
 }
 
@@ -104,7 +130,8 @@ h2{
     width: 400px;
     height: 100px;
     text-align: center;
-    padding: 0 70px;
+    padding: 45px;
+    padding-top: 20px;
 }
 
 .detail p{
@@ -114,16 +141,16 @@ h2{
 }
 
 .detail a{
-    padding: 20px auto;
+    padding: 50px auto;
     width: 180px;
     display: inline-block;
     height: 40px;
-    vertical-align: middle;
+    line-height: 40px;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -147,6 +174,7 @@ h2{
 }
 
 .tiles{
+    z-index: 2;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -156,6 +184,7 @@ h2{
 }
 
 .tile{
+    z-index: 2;
     width: 240px;
     height: 340px;
     margin: 10px;
@@ -232,12 +261,15 @@ h2{
 }
 
 .images{
-    height: 450px;
+    height: auto;
+    width: auto;
 }
 
 .slider{
+    height: 300px;
+    padding-top: 0;
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
 }
 .slider img{
     height: auto;
@@ -283,6 +315,7 @@ canvas{
 
 /* ---- particles.js container ---- */ 
 #particles-js{
+    z-index: 1;
     position: relative;
     width: 100%; 
     height: 100%; 
@@ -325,3 +358,30 @@ canvas{
 .count-particles{ 
     border-radius: 0 0 3px 3px; 
 }
+
+.fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+  }
+  
+  .fade-in-up {
+    transform: translate(0, 50px);
+  }
+  
+  .fade-in-down {
+    transform: translate(0, -50px);
+  }
+  
+  .fade-in-left {
+    transform: translate(-50px, 0);
+  }
+  
+  .fade-in-right {
+    transform: translate(50px, 0);
+  }
+  
+  .scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
