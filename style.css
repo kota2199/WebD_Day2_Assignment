@@ -62,14 +62,17 @@ li a:hover{
 
 .top img{
     width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .top p{
-    padding-top: 40px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     font-family: "my-font2";
     text-align: center;
@@ -439,13 +442,12 @@ canvas{
 
 @media all and (max-width:480px) {
     .top p{
-        font-size: 20px;
+        font-size: 15px;
+        top: 60%;
     }
 
     .top img{
         width: 70%;
-        padding: 0;
-        padding-top: 250px;
     }
 
     .top{
@@ -511,19 +513,22 @@ canvas{
     }
 
     .logo-box{
-        height: 140px;
+        height: 120px;
     }
 
     .course-logo{
-        height: auto;
+        height: 70px;
         width: auto;
-        margin-top: 0;
+        margin-top: 10px;
         padding-top: 20px;
     }
 
-    .unity .course-logo{
+    .html .course-logo{
         height: 80px;
-        width: 80px;
+    }
+
+    .css .course-logo{
+        height: 80px;
     }
 
     .course-title{
@@ -545,14 +550,15 @@ canvas{
     .course-btn{
         margin: 0;
         padding: 0;
-        height: 30px;
-        width: 140px;
+        height: 15px;
+        width: 130px;
         font-size: 12px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 10px;
-        line-height: 40px;
+        margin-top: 20px;
+        line-height: 15px;
         padding: 0;
+        padding-top: 10px;
         padding-bottom: 10px;
     }
 
