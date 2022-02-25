@@ -458,7 +458,8 @@ canvas{
     .top p{
         font-size: 20px;
         top: 60%;
-        font-weight: bold;
+        font-family: "my-font6";
+        font-style: normal;
     }
 
     .top img{
