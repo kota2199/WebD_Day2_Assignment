@@ -174,8 +174,8 @@ h2{
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 4;
 }
-
 .detail a:hover{
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
@@ -258,7 +258,7 @@ h2{
     font-family: 'Hiragino Kaku Gothic Pro';
 }
 
-.course-btn a:hover{
+.course-tile a:hover{
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -326,8 +326,8 @@ h2{
 }
 
 .access{
-    margin-top: 100px;
-    height: 650px;
+    margin-top: 10px;
+    height: 500px;
 }
 
 iframe{
@@ -337,12 +337,15 @@ iframe{
     margin-right: auto;
 }
 
+.footer{
+    height: 200px;
+}
+
 footer p{
-    padding-top: 300px;
+    padding-top: 100px;
     padding-bottom: 30px;
-    font-weight: bold;
     text-align: center;
-    font-family: "my-font4";
+    font-family: "my-font1";
     color:#3E5DDB;
 }
 
@@ -431,6 +434,7 @@ canvas{
 
   iframe{
       width: 600px;
+      height: 400px;
   }
 
 @media all and (max-width:480px) {
@@ -441,7 +445,7 @@ canvas{
     .top img{
         width: 70%;
         padding: 0;
-        padding-top: 300px;
+        padding-top: 250px;
     }
 
     .top{
@@ -449,7 +453,11 @@ canvas{
     }
 
     h2{
-        font-size: 45px;
+        font-size: 35px;
+    }
+
+    .title-box{
+        height: 100px;
     }
 
     .top{
@@ -463,15 +471,32 @@ canvas{
     .intro-bgi1, .intro-bgi2{
         width: auto;
         margin: 20px;
-        height: 100px;
+        height: 80px;
     }
 
     .detail{
         width: auto;
     }
 
+    .detail a{
+        padding-top: 0;
+        font-size: 15px;
+    }
+
+    .bluebtn{
+        margin-top: 5px;
+    }
+
+    .yelbtn{
+        margin-top: 5px;
+    }
+
+    .detail p{
+        font-size: 12px;
+    }
+
     .introduction{
-        height: 1700px;
+        height: 1380px;
     }
 
     .content, .content2{
@@ -481,14 +506,19 @@ canvas{
         justify-content:space-around;
     }
 
-    .logo-box{
-        height: 160px;
+    .content{
+        padding-bottom: 10px;
+    }
 
+    .logo-box{
+        height: 140px;
     }
 
     .course-logo{
         height: auto;
         width: auto;
+        margin-top: 0;
+        padding-top: 20px;
     }
 
     .unity .course-logo{
@@ -498,34 +528,48 @@ canvas{
 
     .course-title{
         padding: 0;
-        margin-top: 10px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .course-tile{
+        width: 40vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tiles{
+        width: 100vw;
+        padding-top: 10px;
     }
 
     .course-btn{
         margin: 0;
         padding: 0;
         height: 30px;
-        width: 120px;
+        width: 140px;
         font-size: 10px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 10px;
+        margin-top: 15px;
         line-height: 35px;
         padding: 0;
         padding-bottom: 5px;
     }
 
-    .tiles{
-        width: 90%;
-    }
-
     .tile{
-        height: 240px;
-        width: 140px;
+        height: 220px;
+        width: 43vw;
+        margin: 12px 8px;
     }
 
     .access{
-        height: 400px;
+        height: 430px;
+    }
+
+    iframe{
+        height: 300px;
+        padding-top: 10px;
     }
 
     .top ul{
@@ -537,5 +581,14 @@ canvas{
         height: auto;
         width: 100%;
     
-}
+    }
+
+    .slider-box{
+        padding-top: 30px;
+    }
+
+    footer p{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
 }
