@@ -23,6 +23,16 @@
     src: url(fonts/Futura-Lig.ttf);
 }
 
+@font-face {
+    font-family: "my-font5";
+    src: url(fonts/Futura-BolObl.ttf);
+}
+
+@font-face {
+    font-family: "my-font6";
+    src: url(fonts/Futura-BooObl.ttf);
+}
+
 ul{
     padding: 30px 50px;
     text-align: right;
@@ -50,6 +60,7 @@ li a:hover{
 }
 
 .top{
+    text-align: center;
     height:800px;
     width: 100%;
     background-position: center center;
@@ -62,23 +73,26 @@ li a:hover{
 
 .top img{
     width: 60%;
+    margin: auto;
+}
+
+
+.top p{
+    color: #fff;
+    font-family: "my-font2";
+    font-style: italic;
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+.top-title{
+    height: 300px;
+    width: 100vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.top p{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "my-font2";
-    text-align: center;
-    font-size: 20px;
-    font-size: 45px;
-    font-weight: bold;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 h2{
@@ -442,16 +456,21 @@ canvas{
 
 @media all and (max-width:480px) {
     .top p{
-        font-size: 15px;
+        font-size: 20px;
         top: 60%;
     }
 
     .top img{
-        width: 70%;
+        width: 80vw;
     }
 
     .top{
         height: 100vw;
+    }
+
+    .top-title{
+
+        height: 100px;
     }
 
     h2{
