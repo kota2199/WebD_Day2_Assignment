@@ -186,6 +186,7 @@ h2{
 
 .yelbtn{
     background-color: #FFBF01;
+    border-color: #FFBF01;
 }
 
 .courses{
@@ -288,15 +289,33 @@ h2{
     width: auto;
 }
 
+.images ul{
+    width: 80vw;
+}
+
+.slider-box{
+    overflow: hidden;
+    line-height: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .slider{
     height: 300px;
     padding-top: 0;
     margin: 0 auto;
     width: 90vw;
 }
+
+.slider li{
+    padding: 0;
+    margin: 0;
+}
 .slider img{
     height: auto;
-    width: 120%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -486,12 +505,14 @@ canvas{
         margin: 0;
         padding: 0;
         height: 30px;
-        width: 100px;
+        width: 120px;
         font-size: 10px;
         margin-right: auto;
         margin-left: auto;
         margin-top: 10px;
-        line-height: 30px;
+        line-height: 35px;
+        padding: 0;
+        padding-bottom: 5px;
     }
 
     .tiles{
@@ -510,4 +531,11 @@ canvas{
     .top ul{
         display: none;
     }
+
+
+    .slider img{
+        height: auto;
+        width: 100%;
+    
+}
 }
